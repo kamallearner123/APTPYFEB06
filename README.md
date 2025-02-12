@@ -9,13 +9,13 @@ This course is designed for individuals aiming to strengthen their Python skills
 | <span style="color:blue">**Details**</span>        | <span style="color:blue">**Information**</span>                       |
 |--------------------|---------------------------------------|
 | <span style="color:green">**Trainer**</span>        | Kamal Kumar Mukiri                   |
-| <span style="color:green">**Course Name**</span>    | APTPYTHNOV08 (Python Programming)                   |
-| <span style="color:green">**Timings**</span>        | 9:30 am to 12:30 pm (IST)            |
-| <span style="color:green">**Dates**</span>          | 16th Nov 2024 to 18th Jan 2025        |
-| <span style="color:green">**Days**</span>           | Saturday                             |
+| <span style="color:green">**Course Name**</span>    | APTPYFEB06 (Python Programming)                   |
+| <span style="color:green">**Timings**</span>        | 8:00 am to 9:00 am (IST)            |
+| <span style="color:green">**Dates**</span>          | 7th Feb to 8th March        |
+| <span style="color:green">**Days**</span>           | Monday to Friday                             |
 | <span style="color:green">**Fee**</span>            | 6000/- per head                      |
 | <span style="color:green">**Platform**</span>       | Google Meet                          |
-| <span style="color:green">**GitHub Link**</span>    | [GitHub Repository]https://github.com/kamallearner123/APTPYTHNOV08/tree/main)            |
+| <span style="color:green">**GitHub Link**</span>    |          |
 
 ---
 
