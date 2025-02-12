@@ -9,8 +9,8 @@
    - c. Default arguments
 
 
-**Video Link:** [Watch here](https://drive.google.com/file/d/1unmCJ35UBum-OBRZDeKTJwbgH8NT8MDf/view?usp=sharing)  
-**Whiteboard Link:** Feb01 [Web view](https://1drv.ms/o/c/994729ec26ede13a/Ejrh7SbsKUcggJl6AAAAAAABo-nFmZsr9b9PpwqcdA4Gog)
+**Video Link:** [Watch here](https://drive.google.com/file/d/1CLhb27wP_hvejZ-tz2_SYtWyAzLBRrT9/view?usp=drive_link)  
+**Whiteboard Link:** NA
 
 ## Homework:  
 1. Finish QA paper individually. (https://forms.gle/r8t9ytVFv6goM1Bq7)
