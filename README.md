@@ -39,6 +39,7 @@ This course is designed for individuals aiming to strengthen their Python skills
    - Scope and Lifetime of Variables (Local vs. Global)
 
 ### 4. **Data Structures**
+   - Strings: Methods, Test pre-processing
    - Lists: Creating, Indexing, Slicing, and Common Methods
    - Tuples: Immutability and Use Cases
    - Sets: Set Operations (union, intersection, difference)
