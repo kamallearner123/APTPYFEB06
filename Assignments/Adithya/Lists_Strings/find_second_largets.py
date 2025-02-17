@@ -1,5 +1,9 @@
 def find_second_largest(arr):
-    # Write your code here
+    arr.sort()
+    length=len(arr)
+    length=int(length)
+    second_largest=arr[length-2]
+    print(second_largest)# Write your code here
     pass
 
 if __name__ == '__main__':
