@@ -2,7 +2,12 @@ def remove_duplicates(data):
     """
     This function removes duplicates from the list and returns a new list without duplicates.
     """
-    # Write your code here
+    result=[]
+    for i in data:
+        if i not in result:
+            result.append(i)
+    print(result)
+    # data = [1, 2, 3, 4, 5, 1, 2, 3] your code here
     return list(set(data))
 
 if __name__ == '__main__':
