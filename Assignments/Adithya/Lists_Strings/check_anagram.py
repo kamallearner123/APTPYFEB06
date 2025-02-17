@@ -1,5 +1,16 @@
 def find_anagram(s1, s2):
-    # Write your code here
+    s1=s1.lower()
+    s2=s2.lower()
+    if (len(s1) ==len(s2)):
+        sorted_s1=sorted(s1)
+        sorted_s2=sorted(s2)
+        if (sorted_s1 == sorted_s2):
+            print("its anagram")
+        else:
+            print("not a anagram")
+    else:
+        print("not a anagram")
+              # Write your code here
     pass
 
 if __name__ == '__main__':
