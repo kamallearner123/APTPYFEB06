@@ -1,6 +1,12 @@
 def find_non_repeat_chars(s):
-    # Write your code here
-    pass
+p=[]
+for char in s:
+    p.append(char)
+for i in p:
+    count=p.count(i)
+    if count==1:
+        print(i)
+        break
 
 if __name__ == '__main__':
     # Test case 1
