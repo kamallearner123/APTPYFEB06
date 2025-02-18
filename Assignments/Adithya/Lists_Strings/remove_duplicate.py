@@ -6,7 +6,7 @@ def remove_duplicates(data):
     for i in data:
         if i not in result:
             result.append(i)
-    print(result)
+    return result
     # data = [1, 2, 3, 4, 5, 1, 2, 3] your code here
     return list(set(data))
 
