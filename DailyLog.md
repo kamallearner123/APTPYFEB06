@@ -1,5 +1,39 @@
 
 ---
+**Date:** Feb 18 2025  
+
+## Topics:  
+1. **Functions**  
+   - a. Lists
+   - b. Assignments
+
+
+**Video Link:** Not available
+**Whiteboard Link:** NA
+
+## Homework:  
+1. Finish QA paper individually. (https://forms.gle/5MVvfKADmDPAntsu9)
+2. Solve all assignments
+---
+
+---
+**Date:** Feb 17 2025  
+
+## Topics:  
+1. **Functions**  
+   - a. Lists
+   - b. Strings
+
+
+**Video Link:** Not available
+**Whiteboard Link:** NA
+
+## Homework:  
+1. Finish QA paper individually. (https://forms.gle/5MVvfKADmDPAntsu9)
+2. Solve any one question on Leetcode or Hackerrank. 
+---
+
+---
 **Date:** Feb 14 2025  
 
 ## Topics:  
