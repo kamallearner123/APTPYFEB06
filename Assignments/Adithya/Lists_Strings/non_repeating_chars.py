@@ -5,8 +5,8 @@ def find_non_repeat_chars(s):
     for i in p:
         count=p.count(i)
         if count==1:
+            print(i)
             return i
-            break
 
 if __name__ == '__main__':
     # Test case 1
@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     # Test case 2
     s = "hello world"
-    assert find_non_repeat_chars(s) == "w"
+    assert find_non_repeat_chars(s) == "h"
 
     # Test case 3
     s = "hello world, this is a test"
