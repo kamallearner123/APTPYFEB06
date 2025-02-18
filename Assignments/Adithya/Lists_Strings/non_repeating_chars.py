@@ -5,7 +5,7 @@ for char in s:
 for i in p:
     count=p.count(i)
     if count==1:
-        print(i)
+        return i
         break
 
 if __name__ == '__main__':
