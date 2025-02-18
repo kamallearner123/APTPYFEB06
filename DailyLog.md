@@ -9,7 +9,7 @@
 
 
 **Video Link:** Not available
-**Whiteboard Link:** NA
+**Whiteboard Link:** (https://drive.google.com/file/d/12wsBeZ1VBlbWQwUwe7_OBhAPr0vW91VA/view?usp=drive_link)
 
 ## Homework:  
 1. Finish QA paper individually. (https://forms.gle/5MVvfKADmDPAntsu9)
@@ -26,7 +26,7 @@
 
 
 **Video Link:** Not available
-**Whiteboard Link:** NA
+**Whiteboard Link:** https://drive.google.com/file/d/1L25prsU-SipBA1kR6wkLlpIeE5iDh5nl/view?usp=drive_link
 
 ## Homework:  
 1. Finish QA paper individually. (https://forms.gle/5MVvfKADmDPAntsu9)
