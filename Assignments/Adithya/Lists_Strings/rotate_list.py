@@ -1,5 +1,8 @@
-def rotate_list(list1, 2):
-    pass
+def rotate_list(list1, n):
+    for i in range(n):
+        value=list1.pop()
+        list1.insert(0,value)
+    return list1
 
 if __name__ == '__main__':
     # Test case 1
@@ -18,5 +21,3 @@ if __name__ == '__main__':
     assert list1 == ["james", "lara", "david", "john"]
 
     print("All testcases pass")
-
-
