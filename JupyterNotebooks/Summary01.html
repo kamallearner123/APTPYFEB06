@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programs</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; background-color: #f4f4f4; }
+        h2 { color: #007bff; }
+        pre { background: #222; color: #fff; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+
+    <h1>20 Python Programs</h1>
+
+    <h2>🔄 Loops</h2>
+    <h3>1️⃣ Print numbers from 1 to 10 using a for loop</h3>
+    <pre>for i in range(1, 11): print(i)</pre>
+
+    <h3>2️⃣ Sum of first N natural numbers using a while loop</h3>
+    <pre>n = int(input("Enter a number: ")) 
+sum_n = 0
+i = 1
+while i <= n:
+    sum_n += i
+    i += 1
+print("Sum:", sum_n)</pre>
+
+    <h3>3️⃣ Print even numbers from a list using a loop</h3>
+    <pre>numbers = [3, 5, 8, 10, 12, 15]
+for num in numbers:
+    if num % 2 == 0:
+        print(num)</pre>
+
+    <h2>🔧 Functions</h2>
+    <h3>4️⃣ Function to check if a number is prime</h3>
+    <pre>def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+print(is_prime(11))</pre>
+
+    <h3>5️⃣ Function to calculate factorial</h3>
+    <pre>def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+print(factorial(5))</pre>
+
+    <h2>📜 Lists</h2>
+    <h3>6️⃣ Reverse a list</h3>
+    <pre>nums = [1, 2, 3, 4, 5]
+print(nums[::-1])</pre>
+
+    <h3>7️⃣ Find the largest element in a list</h3>
+    <pre>nums = [10, 25, 50, 75, 100]
+print("Max:", max(nums))</pre>
+
+    <h3>8️⃣ Remove duplicates from a list</h3>
+    <pre>nums = [1, 2, 2, 3, 4, 4, 5]
+unique_nums = list(set(nums))
+print(unique_nums)</pre>
+
+    <h2>🔤 Strings</h2>
+    <h3>9️⃣ Reverse a string</h3>
+    <pre>s = "Python"
+print(s[::-1])</pre>
+
+    <h3>🔟 Count vowels in a string</h3>
+    <pre>s = "Hello World"
+vowels = "aeiouAEIOU"
+count = sum(1 for c in s if c in vowels)
+print("Vowel count:", count)</pre>
+
+    <h2>📖 Dictionaries</h2>
+    <h3>1️⃣1️⃣ Count character frequency in a string</h3>
+    <pre>s = "hello"
+freq = {}
+for char in s:
+    freq[char] = freq.get(char, 0) + 1
+print(freq)</pre>
+
+    <h3>1️⃣2️⃣ Merge two dictionaries</h3>
+    <pre>dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+merged = {**dict1, **dict2}
+print(merged)</pre>
+
+    <h2>🔢 Tuples</h2>
+    <h3>1️⃣3️⃣ Swap two variables using tuples</h3>
+    <pre>a, b = 5, 10
+a, b = b, a
+print(a, b)</pre>
+
+    <h3>1️⃣4️⃣ Convert a tuple to a list</h3>
+    <pre>t = (1, 2, 3)
+lst = list(t)
+print(lst)</pre>
+
+    <h2>🧠 Advanced Challenges</h2>
+    <h3>1️⃣5️⃣ Find the second largest number in a list</h3>
+    <pre>nums = [10, 20, 4, 45, 99]
+nums.remove(max(nums))
+print(max(nums))</pre>
+
+    <h3>1️⃣6️⃣ Check if a string is a palindrome</h3>
+    <pre>s = "madam"
+print(s == s[::-1])</pre>
+
+    <h3>1️⃣7️⃣ Find common elements in two lists</h3>
+    <pre>list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+common = list(set(list1) & set(list2))
+print(common)</pre>
+
+    <h3>1️⃣8️⃣ Sort a dictionary by values</h3>
+    <pre>data = {'apple': 3, 'banana': 1, 'cherry': 2}
+sorted_dict = dict(sorted(data.items(), key=lambda item: item[1]))
+print(sorted_dict)</pre>
+
+    <h3>1️⃣9️⃣ Find all prime numbers in a range</h3>
+    <pre>def primes_in_range(n):
+    primes = []
+    for num in range(2, n+1):
+        if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1)):
+            primes.append(num)
+    return primes
+print(primes_in_range(50))</pre>
+
+    <h3>2️⃣0️⃣ Implement a simple calculator</h3>
+    <pre>def calculator(a, b, op):
+    if op == '+': return a + b
+    if op == '-': return a - b
+    if op == '*': return a * b
+    if op == '/': return a / b if b != 0 else "Error"
+print(calculator(10, 5, '+'))</pre>
+
+</body>
+</html>

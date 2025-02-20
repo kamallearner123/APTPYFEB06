@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    < name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Dictionaries</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; background-color: #f4f4f4; }
+        h1, h2 { color: #007bff; }
+        h3 { color: #333; }
+        pre { background: #222; color: #fff; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        ul { background: #fff; padding: 10px; border-radius: 5px; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>📖 Python Dictionaries</h1>
+
+    <h2>🔹 What is a Dictionary?</h2>
+    <p>A dictionary in Python is an unordered collection of key-value pairs. It allows for fast lookups and modifications.</p>
+    
+    <h3>🔹 Creating a Dictionary</h3>
+    <pre>my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}</pre>
+
+    <h3>🔹 Accessing Values</h3>
+    <pre>print(my_dict['name'])  # Output: Alice</pre>
+
+    <h3>🔹 Adding or Modifying Values</h3>
+    <pre>my_dict['age'] = 26
+my_dict['job'] = 'Engineer'</pre>
+
+    <h3>🔹 Removing Elements</h3>
+    <pre>del my_dict['city']</pre>
+
+    <h2>🔹 Dictionary Methods</h2>
+    <ul>
+        <li><b>dict.keys()</b> - Returns all keys.</li>
+        <li><b>dict.values()</b> - Returns all values.</li>
+        <li><b>dict.items()</b> - Returns key-value pairs.</li>
+        <li><b>dict.get(key, default)</b> - Fetches a key, or default if not found.</li>
+        <li><b>dict.pop(key)</b> - Removes a key and returns its value.</li>
+        <li><b>dict.popitem()</b> - Removes and returns the last key-value pair.</li>
+        <li><b>dict.update(new_dict)</b> - Merges dictionaries.</li>
+        <li><b>dict.clear()</b> - Removes all items.</li>
+    </ul>
+
+    <h2>🔹 Example Usage</h2>
+    <h3>Looping through keys & values</h3>
+    <pre>for key, value in my_dict.items():
+    print(key, ":", value)</pre>
+
+    <h3>Merging Dictionaries</h3>
+    <pre>dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+dict1.update(dict2)
+print(dict1)  # {'a': 1, 'b': 2, 'c': 3, 'd': 4}</pre>
+
+    <h2>⚡ Difficult Dictionary Questions</h2>
+    <h3>1️⃣ Find the most frequent character in a string</h3>
+    <pre>from collections import Counter
+s = "mississippi"
+freq = Counter(s)
+print(max(freq, key=freq.get))</pre>
+
+    <h3>2️⃣ Convert two lists into a dictionary</h3>
+    <pre>keys = ['name', 'age', 'city']
+values = ['Alice', 25, 'NY']
+result = dict(zip(keys, values))
+print(result)</pre>
+
+    <h3>3️⃣ Group words by their first letter</h3>
+    <pre>words = ['apple', 'banana', 'apricot', 'blueberry']
+grouped = {}
+for word in words:
+    key = word[0]
+    grouped.setdefault(key, []).append(word)
+print(grouped)</pre>
+
+    <h3>4️⃣ Find the difference between two dictionaries</h3>
+    <pre>dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'b': 2, 'c': 4, 'd': 5}
+difference = {k: v for k, v in dict1.items() if k not in dict2}
+print(difference)  # {'a': 1}</pre>
+
+    <h3>5️⃣ Sort a dictionary by values</h3>
+    <pre>data = {'apple': 3, 'banana': 1, 'cherry': 2}
+sorted_dict = dict(sorted(data.items(), key=lambda item: item[1]))
+print(sorted_dict)</pre>
+
+</body>
+</html>
