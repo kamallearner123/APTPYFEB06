@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Best Practices</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2 { color: #2c3e50; }
+        code { background: #f4f4f4; padding: 5px; border-radius: 5px; display: block; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        .section { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Python Best Practices for Readability</h1>
+    
+    <div class="section">
+        <h2>1. Follow PEP 8</h2>
+        <p>Use proper indentation, line length, and spacing.</p>
+        <pre><code>def greet(name: str) -> str:
+    """Return a greeting message."""
+    return f"Hello, {name}!"
+        </code></pre>
+    </div>
+
+    <div class="section">
+        <h2>2. Use Meaningful Variable and Function Names</h2>
+        <p>Avoid single-letter names except for loop counters.</p>
+        <pre><code># Bad
+x = 10
+
+# Good
+max_users = 10</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>3. Use Type Hints</h2>
+        <pre><code>def add_numbers(a: int, b: int) -> int:
+    return a + b</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>4. Keep Functions Short and Focused</h2>
+        <pre><code>def calculate_area(width: float, height: float) -> float:
+    """Calculate the area of a rectangle."""
+    return width * height</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>5. Use Docstrings for Documentation</h2>
+        <pre><code>def square(n: int) -> int:
+    """Returns the square of a number."""
+    return n * n</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>6. Avoid Magic Numbers</h2>
+        <pre><code># Bad
+price = amount * 0.08
+
+# Good
+TAX_RATE = 0.08
+price = amount * TAX_RATE</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>7. Use List Comprehensions</h2>
+        <pre><code># Bad
+squares = []
+for num in range(10):
+    squares.append(num ** 2)
+
+# Good
+squares = [num ** 2 for num in range(10)]</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>8. Use `with` for File Handling</h2>
+        <pre><code>with open("data.txt", "r") as file:
+    content = file.read()</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>9. Handle Exceptions Properly</h2>
+        <pre><code>try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print(f"Error: {e}")</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>10. Use Logging Instead of Print Statements</h2>
+        <pre><code>import logging
+
+logging.basicConfig(level=logging.INFO)
+logging.info("Application started")</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>11. Use `enumerate()` Instead of `range(len())`</h2>
+        <pre><code># Bad
+for i in range(len(items)):
+    print(i, items[i])
+
+# Good
+for index, item in enumerate(items):
+    print(index, item)</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>12. Follow Consistent Naming Conventions</h2>
+        <p>Use snake_case for functions and variables, PascalCase for classes, and UPPER_CASE for constants.</p>
+    </div>
+
+    <div class="section">
+        <h2>13. Use Virtual Environments</h2>
+        <pre><code>python -m venv env
+source env/bin/activate  # Mac/Linux
+env\Scripts\activate     # Windows</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>14. Use `dataclasses` for Struct-like Objects</h2>
+        <pre><code>from dataclasses import dataclass
+
+@dataclass
+class User:
+    name: str
+    age: int</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>15. Use `f-strings` Instead of `format()`</h2>
+        <pre><code>name = "Alice"
+print(f"Hello, {name}!")</code></pre>
+    </div>
+
+</body>
+</html>
