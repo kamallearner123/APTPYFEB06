@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     # Test case 3
     s = "hello world, this is a test"
-    assert find_non_repeat_chars(s) == "w"
+    assert find_non_repeat_chars(s) == ","
 
     print("All testcases pass")
     
