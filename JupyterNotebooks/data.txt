@@ -1,0 +1,33 @@
+lease 101192.168.1.100000 lease {
+  starts ; 3 2025/03/12 12000:00:00AM;
+  ends 3 2025/03/12 10:00:00PM;
+  cltt 3 2025/03/12 12:00:00PM;
+  binding state active;
+ 0o071234
+  next binding state free;
+  hardware ethernet 00:1A:2B:3C:4D:5E;
+  uid "\001\000\032+<M^";
+  client-hostname "client-PC";
+}
+192.168.1.101
+{
+  starts 3 2025/03/12 12:05:00;
+  ends 3 2025/03/12 18:05:00;
+  cltt 3 2025/03/12 12:05:00;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:10:20:3D:4E:5F;
+  client-hostname "laptop-xyz";
+}
+
+lease 192.168.1.102 {
+  starts 3 2025/03/12 12:10:00;
+  ends 3 2025/03/12 18:10:00;
+  cltt 3 2025/03/12 12:10:00;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:1C:2D:3E:4F:60;
+  uid "\001\000\034-3N`";
+  client-hostname "server-01";
+}
+'''
