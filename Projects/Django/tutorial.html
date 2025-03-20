@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Tutorial</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2, h3 { color: #0056b3; }
+        code { background: #f4f4f4; padding: 4px; border-radius: 5px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Django Tutorial</h1>
+
+    <h2>1. Introduction to Django</h2>
+    <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.</p>
+
+    <h2>2. Installation</h2>
+    <p>Ensure you have Python installed, then install Django:</p>
+    <pre><code>pip install django</code></pre>
+
+    <h2>3. Creating a Django Project</h2>
+    <p>Run the following command to start a new Django project:</p>
+    <pre><code>django-admin startproject myproject</code></pre>
+
+    <h2>4. Running the Development Server</h2>
+    <p>Navigate to your project folder and run:</p>
+    <pre><code>cd myproject
+python manage.py runserver</code></pre>
+
+    <h2>5. Creating a Django App</h2>
+    <p>Inside your project, create an app:</p>
+    <pre><code>python manage.py startapp myapp</code></pre>
+
+    <h2>6. Defining Views</h2>
+    <p>Edit <code>myapp/views.py</code> and add:</p>
+    <pre><code>
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Hello, Django!")
+    </code></pre>
+
+    <h2>7. Configuring URLs</h2>
+    <p>Edit <code>myproject/urls.py</code>:</p>
+    <pre><code>
+from django.contrib import admin
+from django.urls import path
+from myapp.views import home
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', home),
+]
+    </code></pre>
+
+    <h2>8. Running the App</h2>
+    <p>Restart the server:</p>
+    <pre><code>python manage.py runserver</code></pre>
+    <p>Visit <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> in your browser to see your Django app in action!</p>
+
+    <h2>9. Creating a Template</h2>
+    <p>Edit <code>myapp/templates/home.html</code>:</p>
+    <pre><code>
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to Django!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+    <h2>10. Using the Template in Views</h2>
+    <p>Edit <code>myapp/views.py</code>:</p>
+    <pre><code>
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'home.html')
+    </code></pre>
+
+    <h2>Next Steps</h2>
+    <p>Learn more about Django models, forms, and authentication in the <a href="https://docs.djangoproject.com/en/stable/">official documentation</a>.</p>
+</body>
+</html>
