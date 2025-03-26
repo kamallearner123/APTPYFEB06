@@ -24,6 +24,9 @@ def Solution(a,b):
 if __name__ == "__main__":
     Solution(a = "11", b = "1")'''
 
+keywords = '''string, binary'''
+
+
 def Solution(a,b):
     print("Hello World")
     return None
