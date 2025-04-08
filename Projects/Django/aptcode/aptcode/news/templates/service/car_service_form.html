@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Estimate Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        td, th {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+            background-color: #f2f2f2;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 5px;
+        }
+        .submit-row {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Car Estimate Entry Form</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            {% for field in form %}
+            <tr>
+                <th>{{ field.label_tag }}</th>
+                <td>
+                    {{ field }}
+                    {% if field.help_text %}
+                        <br><small style="color:gray">{{ field.help_text }}</small>
+                    {% endif %}
+                    {% for error in field.errors %}
+                        <br><span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div class="submit-row">
+            <button type="submit">Submit Estimate</button>
+        </div>
+    </form>
+
+    <div style="width: 80%; margin: auto; margin-top: 20px; font-size: 14px; line-height: 1.6;">
+        <h3>TERMS & CONDITIONS:</h3>
+        <ol>
+            <li>A Supplementary Estimate will be submitted, If any additional damage/Parts required after dismantling.</li>
+            <li>Delivery subject to availability of Parts.</li>
+            <li>Parts price are subject to change without prior notice; prices prevailing at the time of actual delivery shall be charged.</li>
+        </ol>
+    </div>
+</body>
+</html>

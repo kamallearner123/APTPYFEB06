@@ -16,7 +16,7 @@ def get_todays_news():
     print(f"Feed Title: {feed.feed.title}\n")
 
     # Keys words
-    keywords = ["Block Chain","IOT","Bitcoin","India"]
+    keywords = ["Block Chain","IOT","Bitcoin","India", "US", "Cyber"]
 
     html_content = f"""
     <!DOCTYPE html>

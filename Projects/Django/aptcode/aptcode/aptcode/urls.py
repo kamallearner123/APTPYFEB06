@@ -18,14 +18,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from aptcode import views # Added newly
-from solveq import views as solveq_views
+from news import views as news_views # Added newly
+from django.contrib.auth.views import LogoutView
 
 # URL patterns for the project
 urlpatterns = [
     path("admin/", admin.site.urls),
     # Handled locally within main project
     path('', views.index, name='index'), # Added newly
-    path('newstoday', views.news_today, name='to get news'), # Added newly
+    path('news/', include("news.urls")), # Added newly
     # If path is questions/, then include the solveq.urls (anohter app)
     path("questions/", include("solveq.urls")),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/logout/', LogoutView.as_view(next_page='/'), name='logout'),
 ]

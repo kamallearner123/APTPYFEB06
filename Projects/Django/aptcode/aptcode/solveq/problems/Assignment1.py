@@ -41,6 +41,9 @@ if __name__ == "__main__":
     assert(Solution(expression = "()") == True)
     assert(Solution(expression = "()[]{}") == True)'''
 
+
+keywords = '''stack, string'''
+
 def Solution(expression):
     print("Solution funciton is getting called with expression = ", expression)
 
